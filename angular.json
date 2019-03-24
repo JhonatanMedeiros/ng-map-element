@@ -27,11 +27,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "./map-elements/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [
-              "./map-elements/elements.min.js"
             ]
           },
           "configurations": {
