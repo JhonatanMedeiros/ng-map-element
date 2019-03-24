@@ -3,7 +3,7 @@ const concat = require('concat');
 (async function build() {
   const files = [
     './dist/map-elements/runtime.js',
-    './dist/map-elements/polyfills.js',
+    // './dist/map-elements/polyfills.js',
     './dist/map-elements/scripts.js',
     './dist/map-elements/main.js',
   ];
