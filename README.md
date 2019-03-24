@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b7bd61c2-5246-4943-b646-c187fbaac008/deploy-status)](https://app.netlify.com/sites/ng-map-elements/deploys)
+
 # NgMapElement
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
