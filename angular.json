@@ -30,6 +30,9 @@
               "src/styles.scss"
             ],
             "scripts": [
+              {
+                "input": "node_modules/document-register-element/build/document-register-element.js"
+              }
             ]
           },
           "configurations": {
@@ -135,9 +138,9 @@
         }
       }
     },
-    "map-elements": {
-      "root": "projects/map-elements/",
-      "sourceRoot": "projects/map-elements/src",
+    "geo-map-element": {
+      "root": "projects/geo-map-element/",
+      "sourceRoot": "projects/geo-map-element/src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {
@@ -149,17 +152,17 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/map-elements",
-            "index": "projects/map-elements/src/index.html",
-            "main": "projects/map-elements/src/main.ts",
-            "polyfills": "projects/map-elements/src/polyfills.ts",
-            "tsConfig": "projects/map-elements/tsconfig.app.json",
+            "outputPath": "dist/geo-map-element",
+            "index": "projects/geo-map-element/src/index.html",
+            "main": "projects/geo-map-element/src/main.ts",
+            "polyfills": "projects/geo-map-element/src/polyfills.ts",
+            "tsConfig": "projects/geo-map-element/tsconfig.app.json",
             "assets": [
-              "projects/map-elements/src/favicon.ico",
-              "projects/map-elements/src/assets"
+              "projects/geo-map-element/src/favicon.ico",
+              "projects/geo-map-element/src/assets"
             ],
             "styles": [
-              "projects/map-elements/src/styles.scss"
+              "projects/geo-map-element/src/styles.scss"
             ],
             "scripts": [
               {
@@ -171,8 +174,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/map-elements/src/environments/environment.ts",
-                  "with": "projects/map-elements/src/environments/environment.prod.ts"
+                  "replace": "projects/geo-map-element/src/environments/environment.ts",
+                  "with": "projects/geo-map-element/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -197,34 +200,34 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "map-elements:build"
+            "browserTarget": "geo-map-element:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "map-elements:build:production"
+              "browserTarget": "geo-map-element:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "map-elements:build"
+            "browserTarget": "geo-map-element:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/map-elements/src/test.ts",
-            "polyfills": "projects/map-elements/src/polyfills.ts",
-            "tsConfig": "projects/map-elements/tsconfig.spec.json",
-            "karmaConfig": "projects/map-elements/karma.conf.js",
+            "main": "projects/geo-map-element/src/test.ts",
+            "polyfills": "projects/geo-map-element/src/polyfills.ts",
+            "tsConfig": "projects/geo-map-element/tsconfig.spec.json",
+            "karmaConfig": "projects/geo-map-element/karma.conf.js",
             "styles": [
-              "projects/map-elements/src/styles.scss"
+              "projects/geo-map-element/src/styles.scss"
             ],
             "scripts": [],
             "assets": [
-              "projects/map-elements/src/favicon.ico",
-              "projects/map-elements/src/assets"
+              "projects/geo-map-element/src/favicon.ico",
+              "projects/geo-map-element/src/assets"
             ]
           }
         },
@@ -232,8 +235,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/map-elements/tsconfig.app.json",
-              "projects/map-elements/tsconfig.spec.json"
+              "projects/geo-map-element/tsconfig.app.json",
+              "projects/geo-map-element/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -242,27 +245,27 @@
         }
       }
     },
-    "map-elements-e2e": {
-      "root": "projects/map-elements-e2e/",
+    "geo-map-element-e2e": {
+      "root": "projects/geo-map-element-e2e/",
       "projectType": "application",
       "prefix": "",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/map-elements-e2e/protractor.conf.js",
-            "devServerTarget": "map-elements:serve"
+            "protractorConfig": "projects/geo-map-element-e2e/protractor.conf.js",
+            "devServerTarget": "geo-map-element:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "map-elements:serve:production"
+              "devServerTarget": "geo-map-element:serve:production"
             }
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": "projects/map-elements-e2e/tsconfig.e2e.json",
+            "tsConfig": "projects/geo-map-element-e2e/tsconfig.e2e.json",
             "exclude": [
               "**/node_modules/**"
             ]

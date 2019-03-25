@@ -4,7 +4,7 @@
 /dist
 /tmp
 /out-tsc
-/map-elements/
+/geo-map-element/
 
 # dependencies
 /node_modules
