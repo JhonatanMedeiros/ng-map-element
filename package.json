@@ -1,6 +1,18 @@
 {
   "name": "ng-map-element",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "main": "./geo-map-element/geo-map-element.min.js",
+  "files": [
+    "geo-map-element/geo-map-element.min.js",
+    "geo-map-element/styles.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhonatanMedeiros/ng-map-element.git"
+  },
+  "author": "Jhonatan Medeiros <jhonatan.medeiros02@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/JhonatanMedeiros/ng-map-element",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,10 +21,11 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:element": "ng build geo-map-element --prod && node build-geo-map-element.js",
+    "copy:element": "cpr geo-map-element/ demo/geo-map-element/ -o",
     "deploy:gh-pages": "ng build --prod --base-href https://jhonatanmedeiros.github.io/ng-map-element/ && npm run gh-pages",
-    "gh-pages": "gh-pages -d dist/ng-map-element -b gh-pages"
+    "gh-pages": "gh-pages -d demo -b gh-pages"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~7.2.10",
     "@angular/common": "~7.2.10",

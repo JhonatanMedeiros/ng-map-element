@@ -10,6 +10,6 @@ const concat = require('concat');
   await fs.ensureDir('geo-map-element');
   await concat(files, 'geo-map-element/geo-map-element.min.js');
   await fs.copyFile('./dist/geo-map-element/styles.css', 'geo-map-element/styles.css');
-  await fs.copy('./dist/geo-map-element/assets/', 'geo-map-element/assets/' );
+  await fs.copy('./dist/geo-map-element/assets/', 'geo-map-element/' );
   console.info('Geo Map Element created successfully!')
 })();

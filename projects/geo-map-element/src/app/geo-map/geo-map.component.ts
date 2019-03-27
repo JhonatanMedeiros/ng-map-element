@@ -1,9 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-geo-map',
   templateUrl: './geo-map.component.html',
-  styleUrls: ['./geo-map.component.scss']
+  styleUrls: ['./geo-map.component.scss'],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class GeoMapComponent implements OnInit {
 
