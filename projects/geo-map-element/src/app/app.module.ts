@@ -11,9 +11,7 @@ import { GeoMapComponent } from './geo-map/geo-map.component';
 @NgModule({
   declarations: [GeoMapComponent],
   imports: [BrowserModule],
-  exports: [
-    GeoMapComponent
-  ],
+  exports: [GeoMapComponent],
   entryComponents: [GeoMapComponent]
 })
 export class AppModule {
