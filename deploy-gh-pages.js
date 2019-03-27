@@ -5,8 +5,7 @@ const GH_EMAIL = process.env.GH_EMAIL || 'EMAIL';
 
 ghpages.publish('demo', {
   branch: 'gh-pages',
-  remote: 'origin',
   repo: `https://${GH_TOKEN}@github.com/JhonatanMedeiros/ng-map-element.git`,
   silent: false,
   user: { name: 'Jhonatan Medeiros', email: GH_EMAIL}
-});
+}, (msg) => console.log(msg));
