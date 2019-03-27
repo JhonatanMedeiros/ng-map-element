@@ -22,7 +22,7 @@
     "e2e": "ng e2e",
     "build:element": "ng build geo-map-element --prod && node build-geo-map-element.js",
     "copy:element": "cpr geo-map-element/ demo/geo-map-element/ -o",
-    "deploy:gh-pages": "ng build --prod --base-href https://jhonatanmedeiros.github.io/ng-map-element/ && npm run gh-pages",
+    "deploy:gh-pages": "npm run build:element && copy:element && npm run gh-pages",
     "gh-pages": "gh-pages -d demo -b gh-pages"
   },
   "private": false,
