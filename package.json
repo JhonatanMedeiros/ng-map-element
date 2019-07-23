@@ -1,6 +1,6 @@
 {
   "name": "ng-map-element",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-alpha.0",
   "main": "./geo-map-element/geo-map-element.min.js",
   "files": [
     "geo-map-element/geo-map-element.min.js",
