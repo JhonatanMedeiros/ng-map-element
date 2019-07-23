@@ -25,7 +25,7 @@
     "deploy:gh-pages": "npm run build:element && npm run copy:element && npm run gh-pages",
     "gh-pages": "node deploy-gh-pages.js"
   },
-  "private": false,
+  "private": true,
   "dependencies": {
     "@angular/animations": "~7.2.10",
     "@angular/common": "~7.2.10",
@@ -69,5 +69,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "^3.2.4"
+  },
+  "publishConfig": {
+    "access": "private",
+    "registry": "http://localhost:8081/repository/npm-private/"
   }
 }
